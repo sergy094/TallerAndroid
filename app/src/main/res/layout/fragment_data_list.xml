@@ -19,7 +19,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:visibility="gone"
-            android:text="No hay datos" />
+            android:text="@string/view_data_fragment_no_data_text" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/animal_list_view"
