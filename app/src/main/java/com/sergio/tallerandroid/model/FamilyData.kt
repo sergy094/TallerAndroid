@@ -1,6 +1,5 @@
 package com.sergio.tallerandroid.model
 
-import android.content.Context
 import androidx.annotation.StringRes
 import com.sergio.tallerandroid.R
 

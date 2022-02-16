@@ -1,19 +1,12 @@
 package com.sergio.tallerandroid.app.ui.data_list
 
-import android.opengl.Visibility
 import android.os.Bundle
-import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.ActionBar
-import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.lifecycleScope
-import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.sergio.tallerandroid.R
 import com.sergio.tallerandroid.app.base.BaseFragment
@@ -21,8 +14,6 @@ import com.sergio.tallerandroid.app.extension.onChange
 import com.sergio.tallerandroid.app.helpers.RecyclerViewHelper
 import com.sergio.tallerandroid.databinding.FragmentDataListBinding
 import dagger.hilt.android.AndroidEntryPoint
-import java.lang.reflect.Constructor
-import javax.inject.Inject
 
 @AndroidEntryPoint
 class DataListFragment : BaseFragment() {

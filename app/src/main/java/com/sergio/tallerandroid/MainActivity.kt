@@ -3,7 +3,6 @@ package com.sergio.tallerandroid
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import androidx.annotation.DrawableRes
 import androidx.navigation.findNavController
 import dagger.hilt.android.AndroidEntryPoint
 

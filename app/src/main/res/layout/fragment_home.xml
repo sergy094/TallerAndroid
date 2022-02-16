@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="@dimen/spacing_xl"
+        tools:context=".app.ui.home.HomeFragment">
+
+        <TextView
+            android:id="@+id/home_title"
+            style="@style/TitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xxxl"
+            android:text="@string/home_fragment_title_text"
+            android:textAlignment="center"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/view_data_button"
+            android:layout_width="@dimen/rectangle_button_size"
+            android:layout_height="@dimen/rectangle_button_size"
+            android:layout_marginTop="@dimen/spacing_xl"
+            android:text="@string/home_fragment_view_data_button_text"
+            app:cornerRadius="@dimen/spacing_xl"
+            app:layout_constraintBottom_toTopOf="@id/utilities_card"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/home_title" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/utilities_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/spacing_xs"
+            app:cardBackgroundColor="@color/secondaryLight"
+            app:cardCornerRadius="@dimen/card_radius"
+            app:cardElevation="@dimen/high_card_elevation"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_data_button">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/dashed_border"
+                android:padding="@dimen/spacing_xl">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/utilities_title"
+                    style="@style/CardTitleStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_fragment_utilities_title_text"
+                    android:textAlignment="center"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/species_number_subtitle"
+                    style="@style/CardTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_m"
+                    android:text="@string/home_fragment_number_species_text"
+                    app:layout_constraintStart_toStartOf="@id/utilities_title"
+                    app:layout_constraintTop_toBottomOf="@id/utilities_title"
+                    tools:text="Número de especies" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/species_number_count"
+                    style="@style/CardTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_m"
+                    app:layout_constraintEnd_toEndOf="@id/utilities_title"
+                    app:layout_constraintTop_toBottomOf="@id/utilities_title"
+                    tools:text="0" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/specimens_number_subtitle"
+                    style="@style/CardTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_m"
+                    android:text="@string/home_fragment_number_specimens_text"
+                    app:layout_constraintStart_toStartOf="@id/utilities_title"
+                    app:layout_constraintTop_toBottomOf="@id/species_number_subtitle"
+                    tools:text="Numero de especimenes" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/specimens_number_count"
+                    style="@style/CardTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_m"
+                    app:layout_constraintEnd_toEndOf="@id/utilities_title"
+                    app:layout_constraintTop_toBottomOf="@id/species_number_count"
+                    tools:text="0" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/delete_data_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_xl"
+                    android:text="@string/home_fragment_delete_database_button"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/specimens_number_subtitle"
+                    tools:text="Borrar datos" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_animal_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_m"
+            android:contentDescription="@string/add_animal_dialog_title_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_baseline_add_24" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -5,7 +5,6 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import kotlinx.parcelize.Parcelize
-import java.time.LocalDateTime
 
 @Parcelize
 @Entity(tableName = "animal_table")
@@ -22,5 +21,4 @@ data class AnimalData (
 
     @ColumnInfo(name = "family")
     var family: FamilyData,
-): Parcelable {
-}
+): Parcelable

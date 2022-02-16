@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:id="@+id/mobile_navigation.xml"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.sergio.tallerandroid.app.ui.home.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_dataListFragment"
+            app:destination="@id/dataListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dataListFragment"
+        android:name="com.sergio.tallerandroid.app.ui.data_list.DataListFragment"
+        android:label="DataListFragment" />
+</navigation>

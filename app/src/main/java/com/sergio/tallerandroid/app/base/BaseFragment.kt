@@ -2,7 +2,6 @@ package com.sergio.tallerandroid.app.base
 
 import android.os.Bundle
 import android.view.View
-import androidx.annotation.DrawableRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModel

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Android Workshop</string>
+
+    <!--    Common-->
+    <string name="common_accept_text">Accept</string>
+    <string name="common_cancel_text">Cancel</string>
+    <string name="common_required_error_text">Required</string>
+
+    <!--    Home fragment-->
+    <string name="home_fragment_title_text">Android Workshop 21/22</string>
+    <string name="home_fragment_view_data_button_text">View data</string>
+    <string name="home_fragment_utilities_title_text">Utilities</string>
+    <string name="home_fragment_number_species_text">Number of species</string>
+    <string name="home_fragment_number_specimens_text">Number of specimens</string>
+    <string name="home_fragment_delete_database_button">Delete data</string>
+    <string name="home_fragment_snackbar_new_animal_text">New animal added</string>
+    <string name="home_fragment_snackbar_existing_animal_text">Existing animal added</string>
+    <string name="home_fragment_snackbar_delete_database_text">All data deleted</string>
+
+    <!--    View data fragment-->
+    <string name="view_data_fragment_no_data_text">No data found</string>
+
+    <!--    Family-->
+    <string name="family_mammal_text">Mammal</string>
+    <string name="family_reptile_text">Reptile</string>
+    <string name="family_fish_text">Fish</string>
+    <string name="family_bird_text">Bird</string>
+
+    <!--    Add dialog-->
+    <string name="add_animal_dialog_title_text">Add animal</string>
+    <string name="add_animal_dialog_species_text">Species</string>
+    <string name="add_animal_dialog_family_text">Family</string>
+
+</resources>

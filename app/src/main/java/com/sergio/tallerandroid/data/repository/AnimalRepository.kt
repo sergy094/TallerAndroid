@@ -1,7 +1,6 @@
 package com.sergio.tallerandroid.data.repository
 
 import android.database.sqlite.SQLiteException
-import android.util.Log
 import androidx.lifecycle.LiveData
 import com.sergio.tallerandroid.data.database.AnimalDAO
 import com.sergio.tallerandroid.model.AnimalData

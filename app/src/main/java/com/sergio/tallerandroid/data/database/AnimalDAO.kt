@@ -3,7 +3,6 @@ package com.sergio.tallerandroid.data.database
 import androidx.lifecycle.LiveData
 import androidx.room.*
 import com.sergio.tallerandroid.model.AnimalData
-import java.time.LocalDateTime
 
 @Dao
 interface AnimalDAO {
